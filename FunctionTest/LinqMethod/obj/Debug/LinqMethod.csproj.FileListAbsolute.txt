@@ -6,3 +6,8 @@ D:\开发工具\FunctionTest\LinqMethod\bin\Debug\LinqMethod.dll
 D:\开发工具\FunctionTest\LinqMethod\bin\Debug\LinqMethod.pdb
 D:\开发工具\FunctionTest\LinqMethod\obj\Debug\LinqMethod.dll
 D:\开发工具\FunctionTest\LinqMethod\obj\Debug\LinqMethod.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\LinqMethod\bin\Debug\LinqMethod.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\LinqMethod\bin\Debug\LinqMethod.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\LinqMethod\obj\Debug\LinqMethod.csprojResolveAssemblyReference.cache
+D:\TEST\T111\FunctionMethod\FunctionTest\LinqMethod\obj\Debug\LinqMethod.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\LinqMethod\obj\Debug\LinqMethod.pdb

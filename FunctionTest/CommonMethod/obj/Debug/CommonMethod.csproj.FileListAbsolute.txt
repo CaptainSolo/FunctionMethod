@@ -19,3 +19,17 @@ D:\开发工具\FunctionTest\CommonMethod\bin\Debug\EntityFramework.Extended.xml
 D:\开发工具\FunctionTest\CommonMethod\bin\Debug\EntityFramework.SqlServer.xml
 D:\开发工具\FunctionTest\CommonMethod\obj\Debug\CommonMethod.dll
 D:\开发工具\FunctionTest\CommonMethod\obj\Debug\CommonMethod.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\CommonMethod.dll.config
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\CommonMethod.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\CommonMethod.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\EntityFramework.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\EntityFramework.Extended.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\EntityFramework.SqlServer.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\Module.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\Module.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\EntityFramework.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\EntityFramework.Extended.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\bin\Debug\EntityFramework.SqlServer.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\obj\Debug\CommonMethod.csprojResolveAssemblyReference.cache
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\obj\Debug\CommonMethod.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\CommonMethod\obj\Debug\CommonMethod.pdb

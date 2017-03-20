@@ -22,3 +22,16 @@ D:\开发工具\FunctionTest\FunctionTest\bin\Debug\Module.pdb
 D:\开发工具\FunctionTest\FunctionTest\bin\Debug\EntityFramework.xml
 D:\开发工具\FunctionTest\FunctionTest\obj\Debug\FunctionTest.exe
 D:\开发工具\FunctionTest\FunctionTest\obj\Debug\FunctionTest.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\FunctionTest.exe.config
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\obj\Debug\FunctionTest.exe
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\obj\Debug\FunctionTest.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\FunctionTest.exe
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\FunctionTest.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\CommonMethod.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\Module.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\Newtonsoft.Json.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\EntityFramework.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\CommonMethod.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\Module.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\bin\Debug\EntityFramework.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\FunctionTest\obj\Debug\FunctionTest.csprojResolveAssemblyReference.cache
