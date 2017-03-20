@@ -6,3 +6,8 @@ D:\开发工具\FunctionTest\JSFunctionTest\bin\JSFunctionTest.dll
 D:\开发工具\FunctionTest\JSFunctionTest\bin\JSFunctionTest.pdb
 D:\开发工具\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.dll
 D:\开发工具\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\JSFunctionTest\bin\JSFunctionTest.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\JSFunctionTest\bin\JSFunctionTest.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.csprojResolveAssemblyReference.cache
+D:\TEST\T111\FunctionMethod\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.pdb
