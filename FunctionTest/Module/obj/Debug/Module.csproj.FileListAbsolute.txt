@@ -15,3 +15,15 @@ D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.SqlServer.xml
 D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.Extended.dll
 D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.Extended.xml
 D:\开发工具\FunctionTest\Module\obj\Debug\Module.csprojResolveAssemblyReference.cache
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\Module.dll.config
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\Module.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\Module.pdb
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\EntityFramework.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\EntityFramework.Extended.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\EntityFramework.SqlServer.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\EntityFramework.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\EntityFramework.Extended.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\bin\Debug\EntityFramework.SqlServer.xml
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\obj\Debug\Module.csprojResolveAssemblyReference.cache
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\obj\Debug\Module.dll
+D:\TEST\T111\FunctionMethod\FunctionTest\Module\obj\Debug\Module.pdb
