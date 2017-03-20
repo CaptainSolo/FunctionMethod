@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="static/js/jquery-1.9.1.min.js">
+    </script>
+    <script>
+        function myChange() {
+            if ($('#myCheck').prop("checked")) {
+                $('#mytext').show();
+            }
+            else {
+                $('#mytext').hide();
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="myCheck" onchange="myChange()" />经停
+    <input type="text" id="mytext" style="display: none" />
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCTourismEbookingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TCTourismEbookingEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="TourismOrderOperateLogs" EntityType="TCTourismEbookingModel.TourismOrderOperateLog" />
+  </EntityContainer>
+  <EntityType Name="TourismOrderOperateLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="OperatorIP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OperatorType" Type="Byte" Nullable="false" />
+    <Property Name="OperateContent" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Operation" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OperateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Operator" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OperatorObject" Type="Byte" Nullable="false" />
+    <Property Name="OperatorObjectId" Type="Int32" Nullable="false" />
+    <Property Name="OperatePlateform" Type="Byte" Nullable="false" />
+  </EntityType>
+</Schema>

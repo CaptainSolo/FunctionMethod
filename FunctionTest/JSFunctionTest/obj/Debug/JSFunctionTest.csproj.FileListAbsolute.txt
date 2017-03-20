@@ -1,0 +1,8 @@
+D:\FunctionTest\JSFunctionTest\bin\JSFunctionTest.dll
+D:\FunctionTest\JSFunctionTest\bin\JSFunctionTest.pdb
+D:\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.dll
+D:\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.pdb
+D:\开发工具\FunctionTest\JSFunctionTest\bin\JSFunctionTest.dll
+D:\开发工具\FunctionTest\JSFunctionTest\bin\JSFunctionTest.pdb
+D:\开发工具\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.dll
+D:\开发工具\FunctionTest\JSFunctionTest\obj\Debug\JSFunctionTest.pdb

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TCTourismEbookingModelStoreContainer" CdmEntityContainer="TCTourismEbookingEntities">
+    <EntitySetMapping Name="TourismOrderOperateLogs">
+      <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOrderOperateLog">
+        <MappingFragment StoreEntitySet="TourismOrderOperateLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OperatorIP" ColumnName="OperatorIP" />
+          <ScalarProperty Name="OperatorType" ColumnName="OperatorType" />
+          <ScalarProperty Name="OperateContent" ColumnName="OperateContent" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="OperatorObject" ColumnName="OperatorObject" />
+          <ScalarProperty Name="OperatorObjectId" ColumnName="OperatorObjectId" />
+          <ScalarProperty Name="OperatePlateform" ColumnName="OperatePlateform" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TourismOriginFeedbacks">
+      <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOriginFeedback">
+        <MappingFragment StoreEntitySet="TourismOriginFeedback">
+          <ScalarProperty Name="TOFId" ColumnName="TOFId" />
+          <ScalarProperty Name="TOFFeedbackId" ColumnName="TOFFeedbackId" />
+          <ScalarProperty Name="TOFCustomerName" ColumnName="TOFCustomerName" />
+          <ScalarProperty Name="TOFMobile" ColumnName="TOFMobile" />
+          <ScalarProperty Name="TOFOtherContact" ColumnName="TOFOtherContact" />
+          <ScalarProperty Name="TOFCustomerStatus" ColumnName="TOFCustomerStatus" />
+          <ScalarProperty Name="TOFFeedbackSource" ColumnName="TOFFeedbackSource" />
+          <ScalarProperty Name="TOFDepart" ColumnName="TOFDepart" />
+          <ScalarProperty Name="TOFReasonLevel1" ColumnName="TOFReasonLevel1" />
+          <ScalarProperty Name="TOFReasonLevel2" ColumnName="TOFReasonLevel2" />
+          <ScalarProperty Name="TOFReasonLevel3" ColumnName="TOFReasonLevel3" />
+          <ScalarProperty Name="TOFOrderTotalAmount" ColumnName="TOFOrderTotalAmount" />
+          <ScalarProperty Name="TOFUrgency" ColumnName="TOFUrgency" />
+          <ScalarProperty Name="TOFFeedbackContext" ColumnName="TOFFeedbackContext" />
+          <ScalarProperty Name="TOFUrgeTime" ColumnName="TOFUrgeTime" />
+          <ScalarProperty Name="TOFUrgeTimes" ColumnName="TOFUrgeTimes" />
+          <ScalarProperty Name="TOFMemberId" ColumnName="TOFMemberId" />
+          <ScalarProperty Name="TOFIsPayBack" ColumnName="TOFIsPayBack" />
+          <ScalarProperty Name="TOFPayBackStatus" ColumnName="TOFPayBackStatus" />
+          <ScalarProperty Name="TOFPayBackTotalAmount" ColumnName="TOFPayBackTotalAmount" />
+          <ScalarProperty Name="TOFHandler" ColumnName="TOFHandler" />
+          <ScalarProperty Name="TOFCenter" ColumnName="TOFCenter" />
+          <ScalarProperty Name="TOFFeedbackStatus" ColumnName="TOFFeedbackStatus" />
+          <ScalarProperty Name="TOFSatisfaction" ColumnName="TOFSatisfaction" />
+          <ScalarProperty Name="TOFComplaintTime" ColumnName="TOFComplaintTime" />
+          <ScalarProperty Name="TOFStatus" ColumnName="TOFStatus" />
+          <ScalarProperty Name="TOFDataFlag" ColumnName="TOFDataFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TourismOriginFeedbackOrders">
+      <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOriginFeedbackOrder">
+        <MappingFragment StoreEntitySet="TourismOriginFeedbackOrder">
+          <ScalarProperty Name="TOFOId" ColumnName="TOFOId" />
+          <ScalarProperty Name="TOFId" ColumnName="TOFId" />
+          <ScalarProperty Name="TOFOOrderNumber" ColumnName="TOFOOrderNumber" />
+          <ScalarProperty Name="TOFOLineId" ColumnName="TOFOLineId" />
+          <ScalarProperty Name="TOFOLineTitle" ColumnName="TOFOLineTitle" />
+          <ScalarProperty Name="TOFODealStatus" ColumnName="TOFODealStatus" />
+          <ScalarProperty Name="TOFODealTime" ColumnName="TOFODealTime" />
+          <ScalarProperty Name="TOFOSupplierId" ColumnName="TOFOSupplierId" />
+          <ScalarProperty Name="TOFOStartDate" ColumnName="TOFOStartDate" />
+          <ScalarProperty Name="TOFODataFlag" ColumnName="TOFODataFlag" />
+          <ScalarProperty Name="TOFOTravelType" ColumnName="TOFOTravelType" />
+          <ScalarProperty Name="TOFOSupplierName" ColumnName="TOFOSupplierName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

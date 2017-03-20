@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCTourismEbookingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TCTourismEbookingModelStoreContainer">
+    <EntitySet Name="TourismOrderOperateLog" EntityType="TCTourismEbookingModel.Store.TourismOrderOperateLog" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TourismOrderOperateLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OperatorIP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OperatorType" Type="tinyint" Nullable="false" />
+    <Property Name="OperateContent" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Operation" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OperateTime" Type="datetime" Nullable="false" />
+    <Property Name="Operator" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="OperatorObject" Type="tinyint" Nullable="false" />
+    <Property Name="OperatorObjectId" Type="int" Nullable="false" />
+    <Property Name="OperatePlateform" Type="tinyint" Nullable="false" />
+  </EntityType>
+</Schema>

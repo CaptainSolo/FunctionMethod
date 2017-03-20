@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCTourismEbookingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TCTourismEbookingModelStoreContainer">
+    <EntitySet Name="TourismOrderOperateLog" EntityType="TCTourismEbookingModel.Store.TourismOrderOperateLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TourismOriginFeedback" EntityType="TCTourismEbookingModel.Store.TourismOriginFeedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TourismOriginFeedbackOrder" EntityType="TCTourismEbookingModel.Store.TourismOriginFeedbackOrder" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TourismOrderOperateLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OperatorIP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OperatorType" Type="tinyint" Nullable="false" />
+    <Property Name="OperateContent" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Operation" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OperateTime" Type="datetime" Nullable="false" />
+    <Property Name="Operator" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="OperatorObject" Type="tinyint" Nullable="false" />
+    <Property Name="OperatorObjectId" Type="int" Nullable="false" />
+    <Property Name="OperatePlateform" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TourismOriginFeedback">
+    <Key>
+      <PropertyRef Name="TOFId" />
+    </Key>
+    <Property Name="TOFId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TOFFeedbackId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOFCustomerName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOFMobile" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOFOtherContact" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOFCustomerStatus" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFFeedbackSource" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFDepart" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFReasonLevel1" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFReasonLevel2" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFReasonLevel3" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFOrderTotalAmount" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFUrgency" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFFeedbackContext" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TOFUrgeTime" Type="datetime" Nullable="false" />
+    <Property Name="TOFUrgeTimes" Type="nvarchar" Nullable="false" MaxLength="3" />
+    <Property Name="TOFMemberId" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFIsPayBack" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFPayBackStatus" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFPayBackTotalAmount" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFHandler" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFCenter" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFFeedbackStatus" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFSatisfaction" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TOFComplaintTime" Type="datetime" Nullable="false" />
+    <Property Name="TOFStatus" Type="tinyint" Nullable="false" />
+    <Property Name="TOFDataFlag" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TourismOriginFeedbackOrder">
+    <Key>
+      <PropertyRef Name="TOFOId" />
+    </Key>
+    <Property Name="TOFOId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TOFId" Type="bigint" Nullable="false" />
+    <Property Name="TOFOOrderNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOFOLineId" Type="int" Nullable="false" />
+    <Property Name="TOFOLineTitle" Type="nvarchar" Nullable="false" MaxLength="300" />
+    <Property Name="TOFODealStatus" Type="tinyint" Nullable="false" />
+    <Property Name="TOFODealTime" Type="datetime" Nullable="false" />
+    <Property Name="TOFOSupplierId" Type="int" Nullable="false" />
+    <Property Name="TOFOStartDate" Type="datetime" Nullable="false" />
+    <Property Name="TOFODataFlag" Type="tinyint" Nullable="false" />
+    <Property Name="TOFOTravelType" Type="tinyint" Nullable="false" />
+    <Property Name="TOFOSupplierName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+</Schema>

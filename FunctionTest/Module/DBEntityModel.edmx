@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TCTourismEbookingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TCTourismEbookingModelStoreContainer">
+          <EntitySet Name="TourismOrderOperateLog" EntityType="TCTourismEbookingModel.Store.TourismOrderOperateLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TourismOriginFeedback" EntityType="TCTourismEbookingModel.Store.TourismOriginFeedback" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TourismOriginFeedbackOrder" EntityType="TCTourismEbookingModel.Store.TourismOriginFeedbackOrder" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="TourismOrderOperateLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OperatorIP" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OperatorType" Type="tinyint" Nullable="false" />
+          <Property Name="OperateContent" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Operation" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OperateTime" Type="datetime" Nullable="false" />
+          <Property Name="Operator" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="OperatorObject" Type="tinyint" Nullable="false" />
+          <Property Name="OperatorObjectId" Type="int" Nullable="false" />
+          <Property Name="OperatePlateform" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TourismOriginFeedback">
+          <Key>
+            <PropertyRef Name="TOFId" />
+          </Key>
+          <Property Name="TOFId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TOFFeedbackId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TOFCustomerName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TOFMobile" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TOFOtherContact" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TOFCustomerStatus" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFFeedbackSource" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFDepart" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFReasonLevel1" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFReasonLevel2" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFReasonLevel3" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFOrderTotalAmount" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFUrgency" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFFeedbackContext" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="TOFUrgeTime" Type="datetime" Nullable="false" />
+          <Property Name="TOFUrgeTimes" Type="nvarchar" Nullable="false" MaxLength="3" />
+          <Property Name="TOFMemberId" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFIsPayBack" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFPayBackStatus" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFPayBackTotalAmount" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFHandler" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFCenter" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFFeedbackStatus" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFSatisfaction" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="TOFComplaintTime" Type="datetime" Nullable="false" />
+          <Property Name="TOFStatus" Type="tinyint" Nullable="false" />
+          <Property Name="TOFDataFlag" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TourismOriginFeedbackOrder">
+          <Key>
+            <PropertyRef Name="TOFOId" />
+          </Key>
+          <Property Name="TOFOId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TOFId" Type="bigint" Nullable="false" />
+          <Property Name="TOFOOrderNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TOFOLineId" Type="int" Nullable="false" />
+          <Property Name="TOFOLineTitle" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="TOFODealStatus" Type="tinyint" Nullable="false" />
+          <Property Name="TOFODealTime" Type="datetime" Nullable="false" />
+          <Property Name="TOFOSupplierId" Type="int" Nullable="false" />
+          <Property Name="TOFOStartDate" Type="datetime" Nullable="false" />
+          <Property Name="TOFODataFlag" Type="tinyint" Nullable="false" />
+          <Property Name="TOFOTravelType" Type="tinyint" Nullable="false" />
+          <Property Name="TOFOSupplierName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TCTourismEbookingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TCTourismEbookingEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="TourismOrderOperateLogs" EntityType="TCTourismEbookingModel.TourismOrderOperateLog" />
+          <EntitySet Name="TourismOriginFeedbacks" EntityType="TCTourismEbookingModel.TourismOriginFeedback" />
+          <EntitySet Name="TourismOriginFeedbackOrders" EntityType="TCTourismEbookingModel.TourismOriginFeedbackOrder" />
+        </EntityContainer>
+        <EntityType Name="TourismOrderOperateLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="OperatorIP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OperatorType" Type="Byte" Nullable="false" />
+          <Property Name="OperateContent" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Operation" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OperateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Operator" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OperatorObject" Type="Byte" Nullable="false" />
+          <Property Name="OperatorObjectId" Type="Int32" Nullable="false" />
+          <Property Name="OperatePlateform" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TourismOriginFeedback">
+          <Key>
+            <PropertyRef Name="TOFId" />
+          </Key>
+          <Property Name="TOFId" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TOFFeedbackId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TOFCustomerName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TOFMobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TOFOtherContact" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TOFCustomerStatus" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFFeedbackSource" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFDepart" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFReasonLevel1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFReasonLevel2" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFReasonLevel3" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFOrderTotalAmount" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFUrgency" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFFeedbackContext" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="TOFUrgeTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TOFUrgeTimes" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+          <Property Name="TOFMemberId" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFIsPayBack" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFPayBackStatus" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFPayBackTotalAmount" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFHandler" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFCenter" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFFeedbackStatus" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFSatisfaction" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TOFComplaintTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TOFStatus" Type="Byte" Nullable="false" />
+          <Property Name="TOFDataFlag" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TourismOriginFeedbackOrder">
+          <Key>
+            <PropertyRef Name="TOFOId" />
+          </Key>
+          <Property Name="TOFOId" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TOFId" Type="Int64" Nullable="false" />
+          <Property Name="TOFOOrderNumber" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TOFOLineId" Type="Int32" Nullable="false" />
+          <Property Name="TOFOLineTitle" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="TOFODealStatus" Type="Byte" Nullable="false" />
+          <Property Name="TOFODealTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TOFOSupplierId" Type="Int32" Nullable="false" />
+          <Property Name="TOFOStartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TOFODataFlag" Type="Byte" Nullable="false" />
+          <Property Name="TOFOTravelType" Type="Byte" Nullable="false" />
+          <Property Name="TOFOSupplierName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TCTourismEbookingModelStoreContainer" CdmEntityContainer="TCTourismEbookingEntities">
+          <EntitySetMapping Name="TourismOrderOperateLogs">
+            <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOrderOperateLog">
+              <MappingFragment StoreEntitySet="TourismOrderOperateLog">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="OperatorIP" ColumnName="OperatorIP" />
+                <ScalarProperty Name="OperatorType" ColumnName="OperatorType" />
+                <ScalarProperty Name="OperateContent" ColumnName="OperateContent" />
+                <ScalarProperty Name="Operation" ColumnName="Operation" />
+                <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+                <ScalarProperty Name="Operator" ColumnName="Operator" />
+                <ScalarProperty Name="OperatorObject" ColumnName="OperatorObject" />
+                <ScalarProperty Name="OperatorObjectId" ColumnName="OperatorObjectId" />
+                <ScalarProperty Name="OperatePlateform" ColumnName="OperatePlateform" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TourismOriginFeedbacks">
+            <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOriginFeedback">
+              <MappingFragment StoreEntitySet="TourismOriginFeedback">
+                <ScalarProperty Name="TOFId" ColumnName="TOFId" />
+                <ScalarProperty Name="TOFFeedbackId" ColumnName="TOFFeedbackId" />
+                <ScalarProperty Name="TOFCustomerName" ColumnName="TOFCustomerName" />
+                <ScalarProperty Name="TOFMobile" ColumnName="TOFMobile" />
+                <ScalarProperty Name="TOFOtherContact" ColumnName="TOFOtherContact" />
+                <ScalarProperty Name="TOFCustomerStatus" ColumnName="TOFCustomerStatus" />
+                <ScalarProperty Name="TOFFeedbackSource" ColumnName="TOFFeedbackSource" />
+                <ScalarProperty Name="TOFDepart" ColumnName="TOFDepart" />
+                <ScalarProperty Name="TOFReasonLevel1" ColumnName="TOFReasonLevel1" />
+                <ScalarProperty Name="TOFReasonLevel2" ColumnName="TOFReasonLevel2" />
+                <ScalarProperty Name="TOFReasonLevel3" ColumnName="TOFReasonLevel3" />
+                <ScalarProperty Name="TOFOrderTotalAmount" ColumnName="TOFOrderTotalAmount" />
+                <ScalarProperty Name="TOFUrgency" ColumnName="TOFUrgency" />
+                <ScalarProperty Name="TOFFeedbackContext" ColumnName="TOFFeedbackContext" />
+                <ScalarProperty Name="TOFUrgeTime" ColumnName="TOFUrgeTime" />
+                <ScalarProperty Name="TOFUrgeTimes" ColumnName="TOFUrgeTimes" />
+                <ScalarProperty Name="TOFMemberId" ColumnName="TOFMemberId" />
+                <ScalarProperty Name="TOFIsPayBack" ColumnName="TOFIsPayBack" />
+                <ScalarProperty Name="TOFPayBackStatus" ColumnName="TOFPayBackStatus" />
+                <ScalarProperty Name="TOFPayBackTotalAmount" ColumnName="TOFPayBackTotalAmount" />
+                <ScalarProperty Name="TOFHandler" ColumnName="TOFHandler" />
+                <ScalarProperty Name="TOFCenter" ColumnName="TOFCenter" />
+                <ScalarProperty Name="TOFFeedbackStatus" ColumnName="TOFFeedbackStatus" />
+                <ScalarProperty Name="TOFSatisfaction" ColumnName="TOFSatisfaction" />
+                <ScalarProperty Name="TOFComplaintTime" ColumnName="TOFComplaintTime" />
+                <ScalarProperty Name="TOFStatus" ColumnName="TOFStatus" />
+                <ScalarProperty Name="TOFDataFlag" ColumnName="TOFDataFlag" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TourismOriginFeedbackOrders">
+            <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOriginFeedbackOrder">
+              <MappingFragment StoreEntitySet="TourismOriginFeedbackOrder">
+                <ScalarProperty Name="TOFOId" ColumnName="TOFOId" />
+                <ScalarProperty Name="TOFId" ColumnName="TOFId" />
+                <ScalarProperty Name="TOFOOrderNumber" ColumnName="TOFOOrderNumber" />
+                <ScalarProperty Name="TOFOLineId" ColumnName="TOFOLineId" />
+                <ScalarProperty Name="TOFOLineTitle" ColumnName="TOFOLineTitle" />
+                <ScalarProperty Name="TOFODealStatus" ColumnName="TOFODealStatus" />
+                <ScalarProperty Name="TOFODealTime" ColumnName="TOFODealTime" />
+                <ScalarProperty Name="TOFOSupplierId" ColumnName="TOFOSupplierId" />
+                <ScalarProperty Name="TOFOStartDate" ColumnName="TOFOStartDate" />
+                <ScalarProperty Name="TOFODataFlag" ColumnName="TOFODataFlag" />
+                <ScalarProperty Name="TOFOTravelType" ColumnName="TOFOTravelType" />
+                <ScalarProperty Name="TOFOSupplierName" ColumnName="TOFOSupplierName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

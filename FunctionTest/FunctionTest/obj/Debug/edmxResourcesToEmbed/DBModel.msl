@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TCTourismEbookingModelStoreContainer" CdmEntityContainer="TCTourismEbookingEntities">
+    <EntitySetMapping Name="TourismOrderOperateLogs">
+      <EntityTypeMapping TypeName="TCTourismEbookingModel.TourismOrderOperateLog">
+        <MappingFragment StoreEntitySet="TourismOrderOperateLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OperatorIP" ColumnName="OperatorIP" />
+          <ScalarProperty Name="OperatorType" ColumnName="OperatorType" />
+          <ScalarProperty Name="OperateContent" ColumnName="OperateContent" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="OperatorObject" ColumnName="OperatorObject" />
+          <ScalarProperty Name="OperatorObjectId" ColumnName="OperatorObjectId" />
+          <ScalarProperty Name="OperatePlateform" ColumnName="OperatePlateform" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

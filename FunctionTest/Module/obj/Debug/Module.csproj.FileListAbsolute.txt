@@ -1,0 +1,17 @@
+D:\FunctionTest\Module\bin\Debug\Module.dll
+D:\FunctionTest\Module\bin\Debug\Module.pdb
+D:\FunctionTest\Module\obj\Debug\Module.dll
+D:\FunctionTest\Module\obj\Debug\Module.pdb
+D:\FunctionTest\Module\obj\Debug\Module.csprojResolveAssemblyReference.cache
+D:\开发工具\FunctionTest\Module\bin\Debug\Module.dll.config
+D:\开发工具\FunctionTest\Module\bin\Debug\Module.dll
+D:\开发工具\FunctionTest\Module\bin\Debug\Module.pdb
+D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.dll
+D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.xml
+D:\开发工具\FunctionTest\Module\obj\Debug\Module.dll
+D:\开发工具\FunctionTest\Module\obj\Debug\Module.pdb
+D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.SqlServer.dll
+D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.SqlServer.xml
+D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.Extended.dll
+D:\开发工具\FunctionTest\Module\bin\Debug\EntityFramework.Extended.xml
+D:\开发工具\FunctionTest\Module\obj\Debug\Module.csprojResolveAssemblyReference.cache

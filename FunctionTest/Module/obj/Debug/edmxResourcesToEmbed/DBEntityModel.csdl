@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCTourismEbookingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TCTourismEbookingEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="TourismOrderOperateLogs" EntityType="TCTourismEbookingModel.TourismOrderOperateLog" />
+    <EntitySet Name="TourismOriginFeedbacks" EntityType="TCTourismEbookingModel.TourismOriginFeedback" />
+    <EntitySet Name="TourismOriginFeedbackOrders" EntityType="TCTourismEbookingModel.TourismOriginFeedbackOrder" />
+  </EntityContainer>
+  <EntityType Name="TourismOrderOperateLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="OperatorIP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OperatorType" Type="Byte" Nullable="false" />
+    <Property Name="OperateContent" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="Operation" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="OperateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Operator" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OperatorObject" Type="Byte" Nullable="false" />
+    <Property Name="OperatorObjectId" Type="Int32" Nullable="false" />
+    <Property Name="OperatePlateform" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TourismOriginFeedback">
+    <Key>
+      <PropertyRef Name="TOFId" />
+    </Key>
+    <Property Name="TOFId" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TOFFeedbackId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TOFCustomerName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TOFMobile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TOFOtherContact" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TOFCustomerStatus" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFFeedbackSource" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFDepart" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFReasonLevel1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFReasonLevel2" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFReasonLevel3" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFOrderTotalAmount" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFUrgency" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFFeedbackContext" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="TOFUrgeTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOFUrgeTimes" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="TOFMemberId" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFIsPayBack" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFPayBackStatus" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFPayBackTotalAmount" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFHandler" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFCenter" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFFeedbackStatus" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFSatisfaction" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TOFComplaintTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOFStatus" Type="Byte" Nullable="false" />
+    <Property Name="TOFDataFlag" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TourismOriginFeedbackOrder">
+    <Key>
+      <PropertyRef Name="TOFOId" />
+    </Key>
+    <Property Name="TOFOId" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TOFId" Type="Int64" Nullable="false" />
+    <Property Name="TOFOOrderNumber" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TOFOLineId" Type="Int32" Nullable="false" />
+    <Property Name="TOFOLineTitle" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="TOFODealStatus" Type="Byte" Nullable="false" />
+    <Property Name="TOFODealTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOFOSupplierId" Type="Int32" Nullable="false" />
+    <Property Name="TOFOStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOFODataFlag" Type="Byte" Nullable="false" />
+    <Property Name="TOFOTravelType" Type="Byte" Nullable="false" />
+    <Property Name="TOFOSupplierName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>
